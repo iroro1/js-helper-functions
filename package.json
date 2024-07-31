@@ -1,6 +1,6 @@
 {
   "name": "js-helper-function",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "An npm package that holds all javascript functions i have come accross in my career.",
   "type": "module",
   "main": "dist/bundle.cjs.js",
@@ -21,9 +21,7 @@
   ],
   "author": "Leo Ojigbo",
   "license": "MIT",
-  "dependencies": {
-    "jest": "^29.7.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",

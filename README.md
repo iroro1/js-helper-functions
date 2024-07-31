@@ -2,29 +2,12 @@ This library provides a comprehensive set of utility functions for working with 
 
 ## Table of Contents
 
-## Strings
-
-### trim, trimStart,trimEnd,toUpperCase, toLowerCase, capitalize, toTitleCase, reverseString, contains, startsWith, endsWith, indexOf, lastIndexOf, replace, replaceAll, split, join,repeat, substring, slice, padStart, padEnd, removeNonAlphanumeric, removeWhitespace, isEmpty, isBlank, isEmail, isUrl, isPhoneNumber, length, toArray, fromArray, escapeHtml, unescapeHtml, randomString, toSlug, toCamelCase, toPascalCase, toSnakeCase, toConstantCase, capitalizeWords,
-
-## Objects
-
-### isEmptyObject, mergeObjects, deepMerge, getValueByPath, setValueByPath, deleteByPath, cloneObject, hasKey, values, keys, entries, toArrayOfEntries, fromArrayOfEntries, pick, omit, countKeys, allValues, anyValue, transformKeys, transformValues, isPlainObject,
-
 # Dates
 
 ### formatDate, formatCustomDate, dateDiffInDays, dateDiffInWeeks, dateDiffInMonths, dateDiffInYears, addDays, addWeeks, addMonths, addYears, isBefore, isAfter, isSameDay, startOfDay, endOfDay, startOfWeek, endOfWeek, startOfMonth, endOfMonth, startOfYear, endOfYear,
 
-# Arrays
-
-### isEmptyArray, removeDuplicates, flattenArray, first, last, containsValue, findIndex, findLastIndex, removeFirst, removeLast, sliceArray, all, any, mapArray, filterArray, reduceArray, findElement, findAllElements, removeValue, groupBy, min, max, sum, average, shuffle, sortAsc, sortDesc, isSortedAsc, isSortedDesc, mergeArrays,
-
-/\*\*
-
-- formatDate, formatCustomDate, dateDiffInDays, dateDiffInWeeks, dateDiffInMonths, dateDiffInYears, addDays, addWeeks, addMonths, addYears, isBefore, isAfter, isSameDay, startOfDay, endOfDay, startOfWeek, endOfWeek, startOfMonth, endOfMonth, startOfYear, endOfYear
-  \*/
-
 // startOfWeek
-console.log("******\******* startOfWeek ******\*\*******");
+console.log("**\*\***\***\*\*** startOfWeek **\*\***\*\***\*\***");
 console.log(startOfWeek(new Date())); // 2024-07-27T00:00:00.000Z
 
 // endOfWeek
@@ -42,114 +25,105 @@ console.log(startOfYear(new Date())); // 2024-01-01T00:00:00.000Z
 // endOfYear
 console.log(endOfYear(new Date())); // 2024-12-31T23:59:59.999Z
 
-console.log("******\******* AddMonths ******\*\*******");
+console.log("**\*\***\***\*\*** AddMonths **\*\***\*\***\*\***");
 // test addMonths
-console.log("****\*\*\*\***** AddMonths ****\*****");
+console.log("\***\*\*\*\*\*\*\*** AddMonths \***\*\*\*\***");
 console.log(addMonths(new Date(), 10)); // 2024-08-27
 console.log(addMonths(new Date(), -10)); // 2024-06-27
 console.log(addMonths(new Date(), 0)); // 2024-07-27
 
-console.log("******\******* AddYears ******\*\*******");
+console.log("**\*\***\***\*\*** AddYears **\*\***\*\***\*\***");
 // test addYears
 console.log(addYears(new Date(), 10)); // 2025-07-27
 console.log(addYears(new Date(), -10)); // 2023-07-27
 console.log(addYears(new Date(), 0)); // 2024-07-27
 
 // test addDays
-console.log("****\*\*\*\***** AddDays ****\*****");
+console.log("\***\*\*\*\*\*\*\*** AddDays \***\*\*\*\***");
 console.log(addDays(new Date(), 10)); // 2024-07-27
 console.log(addDays(new Date(), -10)); // 2024-07-17
 console.log(addDays(new Date(), 0)); // 2024-07-27
 
-console.log("****\*\*\*\***** AddWeeks ******\*\*******");
+console.log("\***\*\*\*\*\*\*\*** AddWeeks **\*\***\*\***\*\***");
 // test addWeeks
 console.log(addWeeks(new Date(), 10)); // 2024-08-03
 console.log(addWeeks(new Date(), -10)); // 2024-07-17
 console.log(addWeeks(new Date(), 0)); // 2024-08-03
 
-console.log("******\******* dateDiffInDays ******\*\*******");
+console.log("**\*\***\***\*\*** dateDiffInDays **\*\***\*\***\*\***");
 // test dateDiffInDays
 console.log(dateDiffInDays("2024-07-27", "2024-08-27")); // 31
 console.log(dateDiffInDays("2024-07-27", "2024-07-27")); // 0
 console.log(dateDiffInDays("2024-07-27", "2024-06-27")); // 31
 
-console.log("******\******* dateDiffInWeeks ******\*\*******");
+console.log("**\*\***\***\*\*** dateDiffInWeeks **\*\***\*\***\*\***");
 // test dateDiffInWeeks
 console.log(dateDiffInWeeks("2024-07-27", "2024-08-27")); // 5
 console.log(dateDiffInWeeks("2024-07-27", "2024-07-27")); // 0
 console.log(dateDiffInWeeks("2024-07-27", "2024-06-27")); // 5
 
-console.log("******\******* dateDiffInMonths ******\*\*******");
+console.log("**\*\***\***\*\*** dateDiffInMonths **\*\***\*\***\*\***");
 // test dateDiffInMonths
 console.log(dateDiffInMonths("2024-07-27", "2024-08-27")); // 1
 console.log(dateDiffInMonths("2024-07-27", "2024-07-27")); // 0
 console.log(dateDiffInMonths("2024-07-27", "2024-06-27")); // 1
 
-console.log("******\******* dateDiffInYears ******\*\*******");
+console.log("**\*\***\***\*\*** dateDiffInYears **\*\***\*\***\*\***");
 // test dateDiffInYears
 console.log(dateDiffInYears("2024-07-27", "2024-08-27")); // 0
 console.log(dateDiffInYears("2024-07-27", "2024-07-27")); // 0
 console.log(dateDiffInYears("2024-07-27", "2024-06-27")); // 0
 
-console.log("******\******* formatDate ******\*\*******");
+console.log("**\*\***\***\*\*** formatDate **\*\***\*\***\*\***");
 // test formatDate
 console.log(formatDate("2024-07-27")); // 2024-07-27
 
-console.log("******\******* formatCustomDate ******\*\*******");
+console.log("**\*\***\***\*\*** formatCustomDate **\*\***\*\***\*\***");
 // test formatCustomDate
 console.log(formatCustomDate("2024-07-27", "YYYY-MM-DD")); // 2024-07-27
 console.log(formatCustomDate("2024-07-27", "DD-MM-YYYY")); // 27-07-2024
 
-console.log("******\******* isBefore ******\*\*******");
+console.log("**\*\***\***\*\*** isBefore **\*\***\*\***\*\***");
 // test isBefore
 console.log(isBefore("2024-07-27", "2024-08-27")); // true
 console.log(isBefore("2024-07-27", "2024-07-27")); // false
 console.log(isBefore("2024-07-27", "2024-06-27")); // false
 
-console.log("******\******* isAfter ******\*\*******");
+console.log("**\*\***\***\*\*** isAfter **\*\***\*\***\*\***");
 // test isAfter
 console.log(isAfter("2024-07-27", "2024-08-27")); // false
 console.log(isAfter("2024-07-27", "2024-07-27")); // false
 console.log(isAfter("2024-07-27", "2024-06-27")); // true
 
-console.log("******\******* isSameDay ******\*\*******");
+console.log("**\*\***\***\*\*** isSameDay **\*\***\*\***\*\***");
 // test isSameDay
 console.log(isSameDay("2024-07-27", "2024-08-27")); // false
 console.log(isSameDay("2024-07-27", "2024-07-27")); // true
 console.log(isSameDay("2024-07-27", "2024-06-27")); // false
 
-console.log("******\******* isBefore ******\*\*******");
+console.log("**\*\***\***\*\*** isBefore **\*\***\*\***\*\***");
 // test isBefore
 console.log(isBefore("2024-07-27", "2024-08-27")); // true
 console.log(isBefore("2024-07-27", "2024-07-27")); // false
 console.log(isBefore("2024-07-27", "2024-06-27")); // false
 
-console.log("******\******* isAfter ******\*\*******");
+console.log("**\*\***\***\*\*** isAfter **\*\***\*\***\*\***");
 // test isAfter
 console.log(isAfter("2024-07-27", "2024-08-27")); // false
 console.log(isAfter("2024-07-27", "2024-07-27")); // false
 console.log(isAfter("2024-07-27", "2024-06-27")); // true
 
-console.log("******\******* endOfDay ******\*\*******");
+console.log("**\*\***\***\*\*** endOfDay **\*\***\*\***\*\***");
 // test endOfDay
 console.log(endOfDay("2024-07-27")); // 2024-07-27T23:59:59.999Z
 
-console.log("******\******* startOfDay ******\*\*******");
+console.log("**\*\***\***\*\*** startOfDay **\*\***\*\***\*\***");
 // test startOfDay
 console.log(startOfDay("2024-07-27")); // 2024-07-27T00:00:00.000Z
 
-/\*\*
+# Arrays
 
-- isEmptyArray, removeDuplicates, flattenArray, first, last, containsValue, findIndex, findLastIndex, removeFirst, removeLast, sliceArray, all, any, mapArray, filterArray, reduceArray, findElement, findAllElements, removeValue, groupBy, min, max, sum, average, shuffle, sortAsc, sortDesc, isSortedAsc, isSortedDesc, mergeArrays,
-
-average,
-shuffle,
-sortAsc,
-sortDesc,
-isSortedAsc,
-isSortedDesc,
-mergeArrays,
-\*/
+### isEmptyArray, removeDuplicates, flattenArray, first, last, containsValue, findIndex, findLastIndex, removeFirst, removeLast, sliceArray, all, any, mapArray, filterArray, reduceArray, findElement, findAllElements, removeValue, groupBy, min, max, sum, average, shuffle, sortAsc, sortDesc, isSortedAsc, isSortedDesc, mergeArrays,
 
 // test isEmptyArray
 console.log(isEmptyArray([])); // true
@@ -251,10 +225,9 @@ console.log(max([1, 2, 3, 4, 5])); // 5
 // test sum
 console.log(sum([1, 2, 3, 4, 5])); // 15
 
-/\*\*
+## Objects
 
-- isEmptyObject, mergeObjects, deepMerge, getValueByPath, setValueByPath, deleteByPath, cloneObject, hasKey, values, keys, entries, toArrayOfEntries, fromArrayOfEntries, pick, omit, countKeys, allValues, anyValue, transformKeys, transformValues, isPlainObject,
-  \*/
+### isEmptyObject, mergeObjects, deepMerge, getValueByPath, setValueByPath, deleteByPath, cloneObject, hasKey, values, keys, entries, toArrayOfEntries, fromArrayOfEntries, pick, omit, countKeys, allValues, anyValue, transformKeys, transformValues, isPlainObject,
 
 // test toArrayOfEntries
 console.log(toArrayOfEntries({ a: 1, b: 2, c: 3 })); // [['a', 1], ['b', 2], ['c', 3]]
@@ -330,11 +303,9 @@ console.log(entries({ a: 1, b: 2, c: 3 })); // [['a', 1], ['b', 2], ['c', 3]]
 // test toArrayOfEntries
 console.log(toArrayOfEntries({ a: 1, b: 2, c: 3 })); // [['a', 1], ['b', 2], ['c', 3]]
 
-/\*\*
+## Strings
 
-- trim, trimStart,trimEnd,toUpperCase, toLowerCase, capitalize, toTitleCase, reverseString, contains, startsWith, endsWith, indexOf, lastIndexOf, replace, replaceAll, split, join,repeat, substring, slice, padStart, padEnd, removeNonAlphanumeric, removeWhitespace, isEmpty, isBlank, isEmail, isUrl, isPhoneNumber, length, toArray, fromArray, escapeHtml, unescapeHtml, randomString, toSlug, toCamelCase, toPascalCase, toSnakeCase, toConstantCase, capitalizeWords,
-  capitalizeWords
-  \*/
+### trim, trimStart,trimEnd,toUpperCase, toLowerCase, capitalize, toTitleCase, reverseString, contains, startsWith, endsWith, indexOf, lastIndexOf, replace, replaceAll, split, join,repeat, substring, slice, padStart, padEnd, removeNonAlphanumeric, removeWhitespace, isEmpty, isBlank, isEmail, isUrl, isPhoneNumber, length, toArray, fromArray, escapeHtml, unescapeHtml, randomString, toSlug, toCamelCase, toPascalCase, toSnakeCase, toConstantCase, capitalizeWords,
 
 // test capitalizeWords
 console.log(capitalizeWords("hello world")); // "Hello World"
